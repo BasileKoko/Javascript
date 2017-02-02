@@ -3,25 +3,27 @@ $(document).ready(function(){
 
 
   $('#up').on('click', function(){
+    thermostat.isPowerSaving;
     thermostat.up();
     updateTemp();
   })
 
 
   $('#savemode_off').on('click', function(){
-    thermostat.isPowerSaving == false;
+    thermostat.isPowerSaving = false;
     $('#power_save').text('Power Save: OFF');
 
   })
 
   $('#savemode_on').on('click', function(){
-     thermostat.isPowerSaving == true;
+     thermostat.isPowerSaving = true;
      $('#power_save').text('Power Save: ON');
   })
 
   $('#down').on('click', function(){
-      thermostat.down();
-      updateTemp();
+    thermostat.isPowerSaving;
+    thermostat.down();
+    updateTemp();
   })
 
   $('#reset').on('click', function(){
@@ -32,8 +34,10 @@ $(document).ready(function(){
 
   function updateTemp(){
     $('#current_temp').text('Current Temperature: ' + thermostat.temperature);
-    $('#usage').text('Usage: ' + thermostat.usage());
+    $('#usage').text('usage: ' + thermostat.usage());
+    $('#usage').attr('class', thermostat.usage());
   }
+
 
 
 })
