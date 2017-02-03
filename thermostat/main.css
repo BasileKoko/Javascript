@@ -2,8 +2,9 @@ body {
 
 
   background-color:lightblue;
-  /*background-image: url('http://www.shunvmall.com/data/out/207/47836435-sky-blue-wallpaper.jpg');*/
+  background-image: url('http://cdn.meteo-europ.com/img/background/background.jpg');
 }
+
 
 
 .low-usage {
@@ -21,7 +22,7 @@ body {
 
 #thermo-display, #buttons {
   background-color: grey;
-    border-radius: 8px;
+    border-radius: 15px;
     color: white;
     text-align: center;
     font-size: 20px;
