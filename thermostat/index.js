@@ -66,8 +66,8 @@ function submitWeather(city) {
   })
 
   function updateTemp(){
-    $('#current_temp').text('Temperature: ' + thermostat.temperature + ' °C');
-    $('#usage').text('usage: ' + thermostat.usage());
+    $('#current_temp').text(thermostat.temperature + ' °C');
+    $('#usage').text(thermostat.usage());
     $('#usage').attr('class', thermostat.usage());
   }
 
